@@ -1,0 +1,13 @@
+.header {
+  position: fixed;
+  width: 1110px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 43px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header+div {
+  margin-top: 60px;
+}
