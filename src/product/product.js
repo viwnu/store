@@ -7,17 +7,20 @@ import productBase from './productBase.js';
 
 export default function Product() {
   return(
-    <>
+    <section>
+      <ul>
       {
         productBase.map((item, index) => {
-            return(
+          return (
+            <li key = {index}>
               <ProductCategory
-                key = {index}
                 productCategoryIndex = {index}
               />
-            )
-          })
+            </li>
+          )
+        })
       }
-    </>
+      </ul>
+    </section>
   );
 }

@@ -16,21 +16,24 @@ export default function Header({setShow}) {
   const cartButtonLogo = "/CartButtonLogo.svg";
 
   return (
-    <div className="header">
+    <header className="header">
+
       <button
         className="logo"
         onClick = {() => setShow('product')}
       >QPICK</button>
+
       <HeaderButton
         logo = {favoritesButtonLogo}
         buttonCounter = {2}
       />
+
       <HeaderButton
         setShow = {setShow}
         logo = {cartButtonLogo}
         buttonCounter = {inCartAmount(cart)}
       />
-      <div></div>
-    </div>
+
+    </header>
   )
 };

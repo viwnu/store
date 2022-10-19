@@ -18,7 +18,7 @@ export default function Cart() {
   ), 0)
 
   return (
-    <div className="cart">
+    <section className="cart">
       <div className="cartList">
       {cart.map((item, index) => {
         return (
@@ -32,6 +32,6 @@ export default function Cart() {
       <CartSummary
         totalCost = {totalCost}
       />
-    </div>
+    </section>
   )
 }

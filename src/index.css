@@ -53,6 +53,15 @@ a {
   color: inherit;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
 h1 {
   margin: 0;
   padding-bottom: 20px;

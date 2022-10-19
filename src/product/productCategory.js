@@ -12,19 +12,20 @@ export default function ProductCategory({productCategoryIndex}) {
       <div className="productCategoryHeader">
         <h1>{productBase[productCategoryIndex].productCategoryName}</h1>
       </div>
-      <div className="products">
+      <ul className="products">
         {
           productBase[productCategoryIndex].products.map((item, index) => {
             return (
-              <ProductCard
-                key = {index}
-                productCategoryIndex = {productCategoryIndex}
-                productIndex = {index}
-              />
+              <li key = {index}>
+                <ProductCard
+                  productCategoryIndex = {productCategoryIndex}
+                  productIndex = {index}
+                />
+              </li>
             );
           })
         }
-      </div>
+      </ul>
     </div>
   );
 }
