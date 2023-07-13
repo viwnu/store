@@ -12,8 +12,8 @@ import './header.css';
 export default function Header({setShow}) {
   const [cart] = useContext(CartContext);
 
-  const favoritesButtonLogo = "/FavoritesButtonLogo.svg";
-  const cartButtonLogo = "/CartButtonLogo.svg";
+  const favoritesButtonLogo = "/store/FavoritesButtonLogo.svg";
+  const cartButtonLogo = "/store/CartButtonLogo.svg";
 
   return (
     <header className="header">
